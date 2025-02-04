@@ -24,16 +24,16 @@ function App() {
       <div className="min-h-screen bg-black text-gray-400">
          {/* Custom Animated Cursor */}
       <AnimatedCursor
-        innerSize={12} // Size of the inner cursor
-        outerSize={24} // Size of the outer cursor
-        color="255, 50, 150" // RGB color of the cursor
-        outerAlpha={0.4} // Transparency of the outer cursor
-        innerScale={1} // Scale of the inner cursor on hover
-        outerScale={3} // Scale of the outer cursor on hover
+        innerSize={12}
+        outerSize={24}
+        color="255, 50, 150"
+        outerAlpha={0.4}
+        innerScale={1}
+        outerScale={3} 
         clickables={[
           "a",
           "button",
-          ".clickable", // Specify additional elements that should trigger hover effects
+          ".clickable",
         ]}
       />
         {/* Navbar */}
@@ -41,17 +41,16 @@ function App() {
 
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Home page */}
-          <Route path="/about" element={<About />} /> {/* Add this route */}
-          <Route path="/blog" element={<Blog />} /> {/* Add this route */}
+          <Route path="/" element={<Home />} /> 
+          <Route path="/about" element={<About />} /> 
+          <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:blogId"  element={<Blogcards />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/:serviceKey" element={<ServiceDetail  />} /> {/* UX Design Course route */}
+          <Route path="/services/:serviceKey" element={<ServiceDetail  />} />
           <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:projectKey" element={<ProjectDetail />} />
-          <Route path="/process" element={<Process />} /> {/* Process page */}
-          <Route path="/contact" element={<Contact />} /> {/* Contact page */}
-        {/* <Route path="/contact-data" element={<ContactGetData />} /> */}
+          <Route path="/process" element={<Process />} />
+          <Route path="/contact" element={<Contact />} />
         <Route path="/contact-data" element={<ContactGetData />} />
           <Route path="/email-data" element={<EmailTable />} />
 

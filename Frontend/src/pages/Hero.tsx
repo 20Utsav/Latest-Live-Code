@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { FaBullhorn, FaBriefcase, FaLightbulb } from 'react-icons/fa';
-import  heroImage  from '../../img/hero-image.png';
+import heroImage from '../../img/hero-image.png';
 import Vector1 from '../../img/Vector1.png';
 import Vector2 from '../../img/Vector2.png';
 import Vector3 from '../../img/Vector3.png';
@@ -144,16 +144,16 @@ const Hero = () => {
                 animate="visible"
                 initial="hidden"
               >
-                 Code
+                Code
               </motion.span>{" "}
-               and {" "}
+              and {" "}
               <motion.span
                 className="text-purple-600 relative z-[1]"
                 variants={glowVariants}
                 animate="visible"
                 initial="hidden"
               >
-              Excellence 
+                Excellence
               </motion.span>{" "}
               Takes Flight
             </motion.h1>
@@ -208,7 +208,7 @@ const Hero = () => {
               </div>
             </div>
           </motion.div>
-          
+
           {/* Image and Stats with animation */}
           <motion.div
             className="w-full lg:w-1/2 relative flex justify-center lg:justify-end mt-10 lg:mt-0"
@@ -258,41 +258,41 @@ const Hero = () => {
                 variants={floatingVariants}
                 animate="float"
               />
-             <motion.div
-  className="absolute -top-7 right-5 bg-white rounded-lg shadow-lg p-4 text-center w-28 sm:w-32"
-  variants={{
-    ...itemVariants,
-    ...flipVariants,
-  }} // Merged `variants`
-  whileHover="hover"
->
-  <p className="text-xl sm:text-2xl font-bold text-gray-500">5K+</p>
-  <p className="text-xs sm:text-sm text-gray-500">Online Courses</p>
-</motion.div>
+              <motion.div
+                className="absolute -top-7 right-5 bg-white rounded-lg shadow-lg p-4 text-center w-28 sm:w-32"
+                variants={{
+                  ...itemVariants,
+                  ...flipVariants,
+                }} // Merged `variants`
+                whileHover="hover"
+              >
+                <p className="text-xl sm:text-2xl font-bold text-gray-500">5K+</p>
+                <p className="text-xs sm:text-sm text-gray-500">Online Courses</p>
+              </motion.div>
 
-<motion.div
-  className="absolute top-1/2 -translate-y-1/2 -left-14 bg-white rounded-lg shadow-lg p-4 text-center w-28 sm:w-32"
-  variants={{
-    ...itemVariants,
-    ...flipVariants,
-  }} // Merged `variants`
-  whileHover="hover"
->
-  <p className="text-xl sm:text-2xl font-bold text-gray-500">2K+</p>
-  <p className="text-xs sm:text-sm text-gray-500">Video Courses</p>
-</motion.div>
+              <motion.div
+                className="absolute top-1/2 -translate-y-1/2 -left-14 bg-white rounded-lg shadow-lg p-4 text-center w-28 sm:w-32"
+                variants={{
+                  ...itemVariants,
+                  ...flipVariants,
+                }} // Merged `variants`
+                whileHover="hover"
+              >
+                <p className="text-xl sm:text-2xl font-bold text-gray-500">2K+</p>
+                <p className="text-xs sm:text-sm text-gray-500">Video Courses</p>
+              </motion.div>
 
-<motion.div
-  className="absolute bottom-10 right-0 bg-white rounded-lg shadow-lg p-4 text-center w-28 sm:w-32 z-[1]"
-  variants={{
-    ...itemVariants,
-    ...flipVariants,
-  }} // Merged `variants`
-  whileHover="hover"
->
-  <p className="text-xl sm:text-2xl font-bold text-gray-500">250+</p>
-  <p className="text-xs sm:text-sm text-gray-500">Tutors</p>
-</motion.div>
+              <motion.div
+                className="absolute bottom-10 right-0 bg-white rounded-lg shadow-lg p-4 text-center w-28 sm:w-32 z-[1]"
+                variants={{
+                  ...itemVariants,
+                  ...flipVariants,
+                }} // Merged `variants`
+                whileHover="hover"
+              >
+                <p className="text-xl sm:text-2xl font-bold text-gray-500">250+</p>
+                <p className="text-xs sm:text-sm text-gray-500">Tutors</p>
+              </motion.div>
 
               {/* Circular Borders Background */}
               <div className="absolute bottom-12 right-24">
@@ -310,40 +310,23 @@ const Hero = () => {
         </div>
 
         {/* Logos with animation */}
-        {/* <motion.div
+        <motion.div
           className="mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center"
           variants={containerVariants}
           initial="hidden"
           animate={controls}
         >
-          {[1, 2, 3, 4].map((index) => (
+          {[Vector1, Vector2, Vector3, Vector4].map((image, index) => (
             <motion.img
               key={index}
-              src={`/img/Vector${index}.png`}
-              alt={`Logo ${index}`}
+              src={image}
+              alt={`Logo ${index + 1}`}
               className="h-10 text-white object-contain"
               whileHover={{ rotate: 10, scale: 1.1, filter: "drop-shadow(0 0 8px rgba(96, 165, 250, 0.8))" }}
               transition={{ type: "spring", stiffness: 300 }}
             />
           ))}
-        </motion.div> */}
-        <motion.div
-  className="mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center"
-  variants={containerVariants}
-  initial="hidden"
-  animate={controls}
->
-  {[Vector1, Vector2, Vector3, Vector4].map((image, index) => (
-    <motion.img
-      key={index}
-      src={image}
-      alt={`Logo ${index + 1}`}
-      className="h-10 text-white object-contain"
-      whileHover={{ rotate: 10, scale: 1.1, filter: "drop-shadow(0 0 8px rgba(96, 165, 250, 0.8))" }}
-      transition={{ type: "spring", stiffness: 300 }}
-    />
-  ))}
-</motion.div>
+        </motion.div>
       </div>
     </section>
   );
