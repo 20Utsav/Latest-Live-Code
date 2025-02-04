@@ -15,7 +15,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
   path,
 }) => {
   return (
-    <div className="group h-auto w-full flex flex-col p-8 rounded-2xl bg-white text-black shadow-md border transform transition-all duration-500 hover:border-transparent hover:bg-[#112347] hover:text-gray-400">
+    <div className="group w-full flex flex-col p-8 rounded-2xl h-[450px] bg-white text-black shadow-md border transform transition-all duration-500 hover:border-transparent hover:bg-[#112347] hover:text-gray-400">
       <div className="flex items-center justify-center mb-6">
         <img
           src={icon}
@@ -31,8 +31,8 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
         ))}
       </ul>
 
-      {/* Use Link for navigation */}
-      <Link to={path} className="font-medium flex items-center justify-center space-x-2 mt-4">
+      {/* Use Link for navigation with /services/path */}
+      <Link to={`/services/${path}`} className="font-medium flex items-center justify-center space-x-2 mt-4">
         <span>Learn More</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

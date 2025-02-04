@@ -22,38 +22,38 @@ const Services = () => {
 
         {/* Swiper Slider */}
         <Swiper
-          modules={[Autoplay]}
-          spaceBetween={30}
-          slidesPerView={3}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1, // 1 card on smaller screens
-            },
-            768: {
-              slidesPerView: 2, // 2 cards on medium screens
-            },
-            1024: {
-              slidesPerView: 3, // 3 cards on large screens
-            },
-          }}
-          className="w-full"
-        >
-          {Object.values(services).map((service) => (
-            <SwiperSlide key={service.id}>
-              <ServicesCard
-                title={service.title}
-                icon={service.imageSrc} // Changed from service.icon to service.imageSrc
-                details={service.details}
-                path={service.altText} // Changed from service.path to service.altText
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+  modules={[Autoplay]}
+  spaceBetween={30}
+  slidesPerView={1} // Default: 1 card on all screens
+  loop={true}
+  autoplay={{
+    delay: 2500,
+    disableOnInteraction: false,
+  }}
+  breakpoints={{
+    640: {
+      slidesPerView: 1, // 1 card on screens below 640px
+    },
+    768: {
+      slidesPerView: 2, // 2 cards on medium screens (>= 768px)
+    },
+    1024: {
+      slidesPerView: 3, // 3 cards on large screens (>= 1024px)
+    },
+  }}
+  className="w-full"
+>
+  {Object.values(services).map((service) => (
+    <SwiperSlide key={service.id}>
+      <ServicesCard
+        title={service.title}
+        icon={service.imageSrc} // Changed from service.icon to service.imageSrc
+        details={service.details}
+        path={service.altText} // Changed from service.path to service.altText
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
       </section>
     </div>
   );

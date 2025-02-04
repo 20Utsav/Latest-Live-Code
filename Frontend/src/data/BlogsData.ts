@@ -27,7 +27,7 @@ export const BlogData: Record<string, BlogPost> = {
     "python-trends-2025": {
         id: 2,
         category: ["Python", "Tech Trends"],
-        imageSrc: "/images/python-trends-2025.png",
+        imageSrc: "https://tse3.mm.bing.net/th?id=OIP.IhiqRWFamp-enjV2csKdzwHaE8&pid=Api&P=0&h=180",
         altText: "Trends Shaping Python Development in 2025",
         title: "Trends Shaping Python Development in 2025",
         url: "/blog/python-trends-2025",
@@ -40,7 +40,7 @@ export const BlogData: Record<string, BlogPost> = {
     "nodejs-streams": {
         id: 3,
         category: ["Node.js", "Backend Development"],
-        imageSrc: "/images/nodejs-streams.png",
+        imageSrc: "https://tse3.mm.bing.net/th?id=OIP.IhiqRWFamp-enjV2csKdzwHaE8&pid=Api&P=0&h=180",
         altText: "Understanding Streams in Node.js",
         title: "Understanding Streams in Node.js",
         url: "/blog/nodejs-streams",
@@ -65,7 +65,7 @@ export const BlogData: Record<string, BlogPost> = {
     "python-trends-20254": {
         id: 2,
         category: ["Python", "Tech Trends"],
-        imageSrc: "/images/python-trends-2025.png",
+        imageSrc: "https://tse3.mm.bing.net/th?id=OIP.IhiqRWFamp-enjV2csKdzwHaE8&pid=Api&P=0&h=180",
         altText: "Trends Shaping Python Development in 2025",
         title: "Trends Shaping Python Development in 2025",
         url: "/blog/python-trends-2025",

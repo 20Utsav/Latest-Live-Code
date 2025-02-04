@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaEnvelope, FaPhoneAlt, FaRegClock, FaMapMarkerAlt } from "react-icons/fa";
-import EmailForm from '../pages/EmailForm'
+import EmailForm from '../pages/EmailForm';
+import aboutBg from "../../img/about_bg.jpg";
+
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -86,8 +88,13 @@ const Contact: React.FC = () => {
   return (
     <div className="py-8">
       {/* Header Section */}
-      <div className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"
-        style={{ backgroundImage: "url('/img/about_bg.jpg')", backgroundSize: "100% 100%" }}>
+      <div
+        className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"
+        style={{
+          backgroundImage: `url(${aboutBg})`,
+          backgroundSize: "100% 100%",
+        }}
+      >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 text-white px-6 md:px-12">
           <h1 className="text-4xl font-bold">ConvergeSol Overview</h1>

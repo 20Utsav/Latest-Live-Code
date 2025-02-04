@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BlogData } from "../../data/BlogsData";
+import aboutBg from "../../../img/about_bg.jpg";
+
 
 const ITEMS_PER_PAGE = 6;
 
@@ -21,7 +23,7 @@ const Card = () => {
       <div
         className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"
         style={{
-          backgroundImage: "url('/img/about_bg.jpg')",
+          backgroundImage: `url(${aboutBg})`,
           backgroundSize: "100% 100%",
         }}
       >

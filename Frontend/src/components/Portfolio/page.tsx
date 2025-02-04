@@ -2,6 +2,8 @@ import { ExternalLink, Github, Globe } from 'lucide-react';
 import { projects } from '../../data/Portfolio';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import aboutBg from "../../../img/about_bg.jpg";
+
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -22,7 +24,7 @@ export default function Portfolio() {
       <div
         className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"
         style={{
-          backgroundImage: "url('/img/about_bg.jpg')",
+          backgroundImage: `url(${aboutBg})`,
           backgroundSize: "100% 100%",
         }}
       >

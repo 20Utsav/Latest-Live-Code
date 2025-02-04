@@ -6,6 +6,7 @@ import 'swiper/css/autoplay';
 import { Autoplay } from 'swiper/modules';
 import EmailForm from "../pages/EmailForm";
 import ITSolutionSection from "../pages/ITSolutionSection";
+import aboutBg from "../../img/about_bg.jpg";
 
 function About() {
   const images = [
@@ -36,8 +37,8 @@ function About() {
       <div
         className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"
         style={{
-          backgroundImage: "url('/img/about_bg.jpg')",
-          backgroundSize: "100% 100%", // Forces image to fit exactly
+          backgroundImage: `url(${aboutBg})`,
+          backgroundSize: "100% 100%",
         }}
       >
         {/* Overlay */}

@@ -1,4 +1,10 @@
 // /data/servicesData.ts
+import webLogo from "../../img/Services/web_logo.png";
+import appLogo from "../../img/Services/app_logo.png";
+import uiLogo from "../../img/Services/ui_logo.png";
+import digiLogo from "../../img/Services/digi_logo.png";
+import graphicLogo from "../../img/Services/graphic_logo.png";
+
 interface Service {
     id: number;
     category: string[];
@@ -17,7 +23,7 @@ export const services: Services = {
     "web-development": {
         id: 1,
         category: ["Web Development", "Technology"],
-        imageSrc: "/img/Services/web_logo.png",
+        imageSrc: webLogo,
         altText: "web-development",
         title: "Web Development",
         description:
@@ -33,7 +39,7 @@ export const services: Services = {
     "mobile-app-development": {
         id: 2,
         category: ["Mobile Development", "Technology"],
-        imageSrc: "/img/Services/app_logo.png",
+        imageSrc: appLogo,
         altText: "mobile-app-development",
         title: "Mobile App Development",
         description:
@@ -49,7 +55,7 @@ export const services: Services = {
     "ux-ui-design": {
         id: 3,
         category: ["UX/UI Design", "Technology"],
-        imageSrc: "/img/Services/digi_logo.png",
+        imageSrc: uiLogo,
         altText: "ux-ui-design",
         title: "UX/UI Design",
         description:
@@ -65,7 +71,7 @@ export const services: Services = {
     "digital-marketing": {
         id: 4,
         category: ["Marketing", "Technology"],
-        imageSrc: "/img/digital.jpg",
+        imageSrc: digiLogo,
         altText: "digital-marketing",
         title: "Digital Marketing",
         description:
@@ -81,7 +87,7 @@ export const services: Services = {
     "graphic-design": {
         id: 5,
         category: ["Support", "Technology"],
-        imageSrc: "/img/Services/digi_logo.png",
+        imageSrc: graphicLogo,
         altText: "graphic-design",
         title: "graphic design",
         description:
@@ -95,7 +101,7 @@ export const services: Services = {
     "video-editing": {
         id: 6,
         category: ["Support", "Technology"],
-        imageSrc: "/img/Services/digi_logo.png",
+        imageSrc: digiLogo,
         altText: "video-editing",
         title: "Video Editing",
         description:

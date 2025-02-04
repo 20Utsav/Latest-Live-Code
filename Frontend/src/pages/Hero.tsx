@@ -69,6 +69,7 @@ const Hero = () => {
 
   return (
     <section className="relative py-10 md:py-20 overflow-hidden">
+      <img src="" alt="" />
       {/* Background Gradient Animation */}
       <motion.div
         className="absolute inset-0 bg-black"
@@ -247,7 +248,6 @@ const Hero = () => {
               ))}
 
               <motion.img
-                // src="./img/hero-image.png"
                 src={heroImage}
                 alt="Hero"
                 className="rounded-full w-full max-w-md h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] shadow-xl bg-blue-500 z-[1]"
