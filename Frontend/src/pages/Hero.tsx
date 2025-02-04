@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { FaBullhorn, FaBriefcase, FaLightbulb } from 'react-icons/fa';
+import  heroImage  from '../../img/hero-image.png'
 
 const Hero = () => {
   const controls = useAnimation();
@@ -246,7 +247,8 @@ const Hero = () => {
               ))}
 
               <motion.img
-                src="./img/hero-image.png"
+                // src="./img/hero-image.png"
+                src={heroImage}
                 alt="Hero"
                 className="rounded-full w-full max-w-md h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] shadow-xl bg-blue-500 z-[1]"
                 variants={floatingVariants}
