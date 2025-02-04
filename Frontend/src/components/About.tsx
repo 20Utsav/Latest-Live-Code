@@ -7,15 +7,14 @@ import { Autoplay } from 'swiper/modules';
 import EmailForm from "../pages/EmailForm";
 import ITSolutionSection from "../pages/ITSolutionSection";
 import aboutBg from "../../img/about_bg.jpg";
+import utsavImage from "../../img/Team/Utsav.jpg";
+import sujanImage from "../../img/Team/Utsav.jpg";
+import yashImage from "../../img/Team/Utsav.jpg";
+import sagarImage from "../../img/Team/Utsav.jpg";
+import dharamImage from "../../img/Team/Utsav.jpg";
+
 
 function About() {
-  const images = [
-    "/img/Utsav.JPG",
-    "/img/image2.jpg",
-    "/img/image3.jpg",
-    "/img/image4.jpg",
-    "/img/image5.jpg",
-  ];
   const [mapEmail, setMapEmail] = useState("");
 
   const handleMapEmailSubmit = (e) => {
@@ -175,13 +174,9 @@ function About() {
           {/* Individual team members */}
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-              <img
-                src="/img/Utsav.JPG"
-                alt="Uday Kyada"
-                className="w-full object-cover h-[350px]"
-              />
+              <img src={sujanImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
-                <h3 className="text-2xl font-bold  ">Sujan Butani</h3>
+                <h3 className="text-2xl font-bold">Sujan Butani</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Executive Officer</p>
               </div>
             </div>
@@ -189,11 +184,7 @@ function About() {
 
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-              <img
-                src="/img/Utsav.JPG"
-                alt="Utsav Vasoya"
-                className="w-full object-cover h-[350px]"
-              />
+            <img src={utsavImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Utsav Vasoya</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
@@ -203,11 +194,7 @@ function About() {
 
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-              <img
-                src="/img/Utsav.JPG"
-                alt="Nidhi Patel"
-                className="w-full object-cover h-[350px]"
-              />
+            <img src={sagarImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Sagar Sanghani</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
@@ -217,11 +204,7 @@ function About() {
 
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-              <img
-                src="/img/Utsav.JPG"
-                alt="Raj Mehta"
-                className="w-full object-cover h-[350px]"
-              />
+            <img src={yashImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Yash Ramani</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
@@ -231,11 +214,7 @@ function About() {
 
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-              <img
-                src="/img/Utsav.JPG"
-                alt="Raj Mehta"
-                className="w-full object-cover h-[350px]"
-              />
+            <img src={dharamImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Dharam Pipaliya</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>

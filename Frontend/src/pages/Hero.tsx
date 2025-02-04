@@ -3,7 +3,11 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { FaBullhorn, FaBriefcase, FaLightbulb } from 'react-icons/fa';
-import  heroImage  from '../../img/hero-image.png'
+import  heroImage  from '../../img/hero-image.png';
+import Vector1 from '../../img/Vector1.png';
+import Vector2 from '../../img/Vector2.png';
+import Vector3 from '../../img/Vector3.png';
+import Vector4 from '../../img/Vector4.png';
 
 const Hero = () => {
   const controls = useAnimation();
@@ -306,7 +310,7 @@ const Hero = () => {
         </div>
 
         {/* Logos with animation */}
-        <motion.div
+        {/* <motion.div
           className="mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center"
           variants={containerVariants}
           initial="hidden"
@@ -322,7 +326,24 @@ const Hero = () => {
               transition={{ type: "spring", stiffness: 300 }}
             />
           ))}
-        </motion.div>
+        </motion.div> */}
+        <motion.div
+  className="mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center"
+  variants={containerVariants}
+  initial="hidden"
+  animate={controls}
+>
+  {[Vector1, Vector2, Vector3, Vector4].map((image, index) => (
+    <motion.img
+      key={index}
+      src={image}
+      alt={`Logo ${index + 1}`}
+      className="h-10 text-white object-contain"
+      whileHover={{ rotate: 10, scale: 1.1, filter: "drop-shadow(0 0 8px rgba(96, 165, 250, 0.8))" }}
+      transition={{ type: "spring", stiffness: 300 }}
+    />
+  ))}
+</motion.div>
       </div>
     </section>
   );

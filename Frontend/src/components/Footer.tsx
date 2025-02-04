@@ -1,11 +1,12 @@
 import React from "react";
+import footerImage from '../../img/footer.jpeg';
 
 const Footer: React.FC = () => {
   return (
     <footer
-      className="bg-cover bg-center bg-fixed relative"
-      style={{ backgroundImage: "url('/img/footer.jpeg')" }}
-    >
+  className="bg-cover bg-center bg-fixed relative"
+  style={{ backgroundImage: `url(${footerImage})` }}
+>
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#611bdd] to-[#5e87eb] opacity-50 z-0"></div>
 
