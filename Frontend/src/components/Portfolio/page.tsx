@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import aboutBg from "../../../img/about_bg.jpg";
 
-
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -31,8 +30,8 @@ export default function Portfolio() {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <div className="relative z-10 text-white px-6 md:px-12">
-          <h1 className="text-4xl font-bold">ConvergeSol Overview</h1>
-          <p className="mt-2 text-lg">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">ConvergeSol Overview</h1>
+          <p className="mt-2 text-lg sm:text-xl lg:text-2xl">
             <span className="font-medium">Home</span> / Portfolio
           </p>
         </div>
@@ -41,14 +40,14 @@ export default function Portfolio() {
       <div id="portfolio" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold">Our Portfolio</h2>
-            <p className="mt-4 text-xl">
+            <h2 className="text-3xl sm:text-4xl font-bold">Our Portfolio</h2>
+            <p className="mt-4 text-xl sm:text-2xl lg:text-3xl">
               Discover our successful projects and innovative solutions
             </p>
           </div>
 
           {/* Category Filter Buttons */}
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-8 flex justify-center gap-4 flex-wrap">
             {categories.map((category) => (
               <button
                 key={category}
@@ -61,7 +60,7 @@ export default function Portfolio() {
           </div>
 
           {/* Projects Grid */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project) => (
               <div
                 key={project.id}
@@ -97,10 +96,10 @@ export default function Portfolio() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold group-hover:text-indigo-600 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-semibold group-hover:text-indigo-600 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed">
+                  <p className="mt-3 text-sm sm:text-base leading-relaxed">
                     {project.project.description}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
