@@ -45,12 +45,15 @@ function About() {
 
         {/* Content */}
         <div className="relative z-10 text-white px-6 md:px-12">
-          <h1 className="text-4xl font-bold">ConvergeSol Overview</h1>
-          <p className="mt-2 text-lg">
+          <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+            ConvergeSol Overview
+          </h1>
+          <p className="mt-2 text-xs sm:text-sm md:text-lg lg:text-xl">
             <span className="font-medium">Home</span> / About
           </p>
         </div>
       </div>
+
 
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -184,7 +187,7 @@ function About() {
 
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-            <img src={utsavImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
+              <img src={utsavImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Utsav Vasoya</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
@@ -194,7 +197,7 @@ function About() {
 
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-            <img src={sagarImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
+              <img src={sagarImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Sagar Sanghani</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
@@ -204,7 +207,7 @@ function About() {
 
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-            <img src={yashImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
+              <img src={yashImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Yash Ramani</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
@@ -214,7 +217,7 @@ function About() {
 
           <SwiperSlide>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
-            <img src={dharamImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
+              <img src={dharamImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Dharam Pipaliya</h3>
                 <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>

@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { ExternalLink, Github, Globe } from 'lucide-react';
 import { projects } from '../../data/Portfolio';
 import { Link } from 'react-router-dom';
@@ -18,6 +19,10 @@ export default function Portfolio() {
     ? Object.values(projects) 
     : Object.values(projects).filter((project) => project.category === selectedCategory);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
     <div className="py-8">
       <div
@@ -27,11 +32,15 @@ export default function Portfolio() {
           backgroundSize: "100% 100%",
         }}
       >
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
+        {/* Content */}
         <div className="relative z-10 text-white px-6 md:px-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">ConvergeSol Overview</h1>
-          <p className="mt-2 text-lg sm:text-xl lg:text-2xl">
+          <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+            ConvergeSol Overview
+          </h1>
+          <p className="mt-2 text-xs sm:text-sm md:text-lg lg:text-xl">
             <span className="font-medium">Home</span> / Portfolio
           </p>
         </div>

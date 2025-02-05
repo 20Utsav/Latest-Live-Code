@@ -19,25 +19,33 @@ const EmailForm: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto sm:p-8">
-      <div className="bg-[#d0dfea] p-6 rounded-[20px] shadow-md text-black text-center">
-        <h2 className="text-[28px] md:text-[34px] font-bold mb-4">
+    <div className="container mx-auto px-4 sm:px-8 md:px-12 py-12 sm:py-16 md:py-20">
+      <div className="bg-[#d0dfea] p-8 rounded-[20px] shadow-md text-black text-center w-full mx-auto">
+        {/* Title */}
+        <h2 className="text-[24px] sm:text-[28px] md:text-[34px] font-bold mb-4">
           Enter your email to stay connected!
         </h2>
-        <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 justify-center items-center">
+
+        {/* Form */}
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+        >
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="w-full md:w-1/3 border rounded-md p-3 bg-[#5794f9] text-black placeholder:text-black"
+            className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 border rounded-md p-3 bg-[#5794f9] text-black placeholder:text-black"
             required
           />
           <button type="submit" className="bg-[#5794f9] text-black font-bold py-3 px-6 rounded">
             Submit
           </button>
         </form>
-        {/* {message && <p className="mt-4 text-green-600">{message}</p>} */}
+
+        {/* Success/Error Message */}
+        {message && <p className="mt-4 text-green-600 text-lg">{message}</p>}
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const HomeBlog = () => {
   const currentArticles = blogsArray.slice(0, 3);
 
   return (
-    <div className="py-8">
+    <div className="pt-8">
       {/* Blog Section */}
       <div className="px-4 md:px-8 lg:px-16 py-16">
         <h2 className="text-center text-3xl font-bold mb-4">Blog</h2>

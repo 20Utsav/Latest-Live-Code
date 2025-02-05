@@ -95,10 +95,17 @@ const Contact: React.FC = () => {
           backgroundSize: "100% 100%",
         }}
       >
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        {/* Content */}
         <div className="relative z-10 text-white px-6 md:px-12">
-          <h1 className="text-4xl font-bold">ConvergeSol Overview</h1>
-          <p className="mt-2 text-lg"><span className="font-medium">Home</span> / Contact</p>
+          <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+            ConvergeSol Overview
+          </h1>
+          <p className="mt-2 text-xs sm:text-sm md:text-lg lg:text-xl">
+            <span className="font-medium">Home</span> / Contact
+          </p>
         </div>
       </div>
 

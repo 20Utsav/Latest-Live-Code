@@ -83,32 +83,35 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
 const Testimonial: React.FC = () => {
   // Slider settings
   const settings = {
-    dots: true, // Enable pagination dots
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Default number of slides to show
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    arrows: true, // Enable navigation arrows
+    arrows: true, // Show arrows by default
     responsive: [
       {
-        breakpoint: 1024, // For screens smaller than 1024px
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Show 2 slides
+          slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false, // Hide arrows on medium screens
         },
       },
       {
-        breakpoint: 768, // For screens smaller than 768px
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1, // Show 1 slide
+          slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false, // Hide arrows on small screens
         },
       },
     ],
   };
+  
 
   // Generate random ratings for each testimonial
   const getRandomRating = () => {
