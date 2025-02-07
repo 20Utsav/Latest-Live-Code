@@ -24,7 +24,7 @@ export default function Portfolio() {
       }, []);
 
   return (
-    <div className="py-8">
+    <div className="py-16 bg-[#121212]">
       <div
         className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"
         style={{
@@ -48,7 +48,7 @@ export default function Portfolio() {
 
       <div id="portfolio" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center text-white">
             <h2 className="text-3xl sm:text-4xl font-bold">Our Portfolio</h2>
             <p className="mt-4 text-xl sm:text-2xl lg:text-3xl">
               Discover our successful projects and innovative solutions
@@ -61,7 +61,7 @@ export default function Portfolio() {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-lg text-white font-medium transition-colors ${selectedCategory === category ? 'bg-indigo-600' : 'bg-gray-600 hover:bg-indigo-600'}`}
+                className={`px-4 py-2 rounded-lg text-white font-medium transition-colors ${selectedCategory === category ? 'bg-[#202020]' : 'bg-[#202020] hover:bg-indigo-600'}`}
               >
                 {category === 'all' ? 'All' : category}
               </button>
@@ -73,7 +73,7 @@ export default function Portfolio() {
             {filteredProjects.map((project) => (
               <div
                 key={project.id}
-                className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="group relative bg-[#202020] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="relative h-64 overflow-hidden">
                   <div className="absolute inset-0 bg-[#121212] bg-opacity-40 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-center justify-center z-10">
@@ -105,10 +105,10 @@ export default function Portfolio() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl sm:text-2xl font-semibold group-hover:text-indigo-600 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-indigo-600 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="mt-3 text-sm sm:text-base leading-relaxed">
+                  <p className="mt-3 text-sm sm:text-base leading-relaxed text-white">
                     {project.project.description}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -124,7 +124,7 @@ export default function Portfolio() {
                   <div className="mt-6 pt-4 border-t border-gray-100">
                     <Link
                       to={`/portfolio/${project.title.toLowerCase().replace(/ /g, '-')}`} // Pass project key as a route parameter
-                      className="inline-flex items-center text-[#112347] hover:text-[#112347] font-medium"
+                      className="inline-flex items-center text-white hover:text-[#112347] font-medium"
                     >
                       View Details
                       <ExternalLink className="ml-2 h-4 w-4" />

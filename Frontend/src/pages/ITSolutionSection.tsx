@@ -43,7 +43,7 @@ function ITSolutionSection() {
   }, []);
 
   return (
-    <section className="bg-black text-white py-12 px-6">
+    <section className="bg-[#121212] text-white py-12 px-6">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left Image Section */}
         <div className="grid grid-cols-2 gap-4">

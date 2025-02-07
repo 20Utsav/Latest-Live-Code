@@ -32,7 +32,7 @@ function About() {
   }, []);
 
   return (
-    <div className=" py-8">
+    <div className=" py-8 bg-[#121212]">
       <div
         className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"
         style={{
@@ -55,7 +55,7 @@ function About() {
       </div>
 
 
-      <section className="py-12">
+      <section className="py-16 bg-[#121212]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Header Section */}
           <div className="text-center">
@@ -176,51 +176,51 @@ function About() {
         >
           {/* Individual team members */}
           <SwiperSlide>
-            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+            <div className="bg-[#202020] text-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
               <img src={sujanImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold">Sujan Butani</h3>
-                <p className="text-gray-500 text-sm mt-1">Chief Executive Officer</p>
+                <p className="text-sm mt-1">Chief Executive Officer</p>
               </div>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+            <div className="bg-[#202020] text-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
               <img src={utsavImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Utsav Vasoya</h3>
-                <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
+                <p className="text-sm mt-1">Chief Technology Officer</p>
               </div>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+            <div className="bg-[#202020] text-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
               <img src={sagarImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Sagar Sanghani</h3>
-                <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
+                <p className="text-sm mt-1">Chief Technology Officer</p>
               </div>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+            <div className="bg-[#202020] text-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
               <img src={yashImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Yash Ramani</h3>
-                <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
+                <p className="text-sm mt-1">Chief Technology Officer</p>
               </div>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
+            <div className="bg-[#202020] text-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105">
               <img src={dharamImage} alt="Utsav Vasoya" className="w-full object-cover h-[350px]" />
               <div className="p-4 text-center">
                 <h3 className="text-2xl font-bold  ">Dharam Pipaliya</h3>
-                <p className="text-gray-500 text-sm mt-1">Chief Technology Officer</p>
+                <p className="text-sm mt-1">Chief Technology Officer</p>
               </div>
             </div>
           </SwiperSlide>

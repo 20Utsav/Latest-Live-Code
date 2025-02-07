@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="py-8">
+    <div className="py-8 bg-[#121212]">
       {/* Header Section */}
       <div
         className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"

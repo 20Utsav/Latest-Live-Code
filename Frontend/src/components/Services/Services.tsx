@@ -12,7 +12,7 @@ const Services = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className='py-8'>
+    <div className='py-8 bg-[#121212]'>
       <div
         className="relative w-full h-[250px] bg-cover bg-center opacity-80 flex items-center"
         style={{
@@ -21,7 +21,7 @@ const Services = () => {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-[#121212] bg-opacity-50"></div>
 
         {/* Content */}
         <div className="relative z-10 text-white px-6 md:px-12">
