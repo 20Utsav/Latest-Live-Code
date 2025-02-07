@@ -120,9 +120,9 @@ const Testimonial: React.FC = () => {
   };
 
   return (
-    <div className="bg-black py-16">
+    <div className="bg-[#121212] py-16">
       {/* Custom container with max-width of 1280px */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" style={{ maxWidth: "1280px" }}>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white" style={{ maxWidth: "1280px" }}>
         <h2 className="text-center text-3xl font-bold mb-4">
           TESTIMONIALS
         </h2>
@@ -135,7 +135,7 @@ const Testimonial: React.FC = () => {
           <Slider {...settings}>
             {/* Testimonial 1 - Valeria Miller */}
             <div key="valeria" className="px-4">
-              <div className="bg-white text-black p-8 rounded-lg shadow-md text-center">
+              <div className="bg-[#202020] text-white p-8 rounded-lg shadow-md text-center">
                 <img
                   src={ValeriaImage}
                   alt="Valeria Miller"
@@ -157,7 +157,7 @@ const Testimonial: React.FC = () => {
 
             {/* Testimonial 2 - John Doe */}
             <div key="john" className="px-4">
-              <div className="bg-white text-black p-8 rounded-lg shadow-md text-center">
+              <div className="bg-[#202020] text-white p-8 rounded-lg shadow-md text-center">
                 <img
                   src={JohnImage}
                   alt="John Doe"
@@ -179,7 +179,7 @@ const Testimonial: React.FC = () => {
 
             {/* Testimonial 3 - Jane Smith */}
             <div key="jane" className="px-4">
-              <div className="bg-white text-black p-8 rounded-lg shadow-md text-center">
+              <div className="bg-[#202020] text-white p-8 rounded-lg shadow-md text-center">
                 <img
                   src={JaneImage}
                   alt="Jane Smith"

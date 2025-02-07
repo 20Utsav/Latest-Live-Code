@@ -19,8 +19,8 @@ const EmailForm: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 sm:px-8 md:px-12 py-12 sm:py-16 md:py-20">
-      <div className="bg-[#d0dfea] p-8 rounded-[20px] shadow-md text-black text-center w-full mx-auto">
+    <div className="container mx-auto px-4 sm:px-8 md:px-12 py-12 sm:py-16 md:py-20 bg-[#121212]">
+      <div className="bg-[#202020] p-8 rounded-[20px] shadow-md text-white text-center w-full mx-auto">
         {/* Title */}
         <h2 className="text-[24px] sm:text-[28px] md:text-[34px] font-bold mb-4">
           Enter your email to stay connected!

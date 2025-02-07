@@ -10,9 +10,9 @@ const Portfolio = () => {
   const visibleProjects = Object.values(projects).slice(0, 3);
 
   return (
-    <div id="portfolio" className="py-16">
+    <div id="portfolio" className="py-16 bg-[#121212]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <div className="text-center text-white">
           <h2 className="text-3xl font-bold">Our Portfolio</h2>
           <p className="mt-4 text-xl">Discover our successful projects and innovative solutions</p>
         </div>
@@ -22,7 +22,7 @@ const Portfolio = () => {
           {visibleProjects.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-gray-400 text-black rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              className="group relative bg-[#202020] text-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="relative h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-[#121212] bg-opacity-40 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-center justify-center z-10">
@@ -73,7 +73,7 @@ const Portfolio = () => {
                 <div className="mt-6 pt-4 border-t border-gray-100">
                   <Link
                     to={`/portfolio/${project.title.toLowerCase().replace(/ /g, '-')}`} // Pass project key as a route parameter
-                    className="inline-flex items-center text-[#112347] hover:text-[#112347] font-medium"
+                    className="inline-flex items-center text-white hover:text-[#112347] font-medium"
                   >
                     View Details
                     <ExternalLink className="ml-2 h-4 w-4" />

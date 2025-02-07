@@ -9,7 +9,8 @@ const BlogPage = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="py-12 ">
+      <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-2xl font-bold text-gray-900">{blog.title}</h1>
       <p className="text-gray-600">{blog.category}</p>
       <img
@@ -20,6 +21,7 @@ const BlogPage = () => {
       <div className="mt-6">
         <p className="text-gray-700 whitespace-pre-line">{blog.blog.description}</p>
       </div>
+    </div>
     </div>
   );
 };

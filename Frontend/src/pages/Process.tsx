@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   FaRegClipboard,
@@ -48,25 +47,26 @@ const services = [
 
 const Process = () => {
   return (
-    <section className="">
+    <section className="bg-[#121212] py-16 px-4">
       <div className="max-w-6xl mx-auto">
-      <div className="text-center">
-          <h2 className="text-3xl font-bold  ">Our Process</h2>
-          <p className="mt-4 text-xl  ">
+        <div className="text-center text-white">
+          <h2 className="text-3xl md:text-4xl font-bold">Our Process</h2>
+          <p className="mt-4 text-lg md:text-xl">
             Discover our successful projects and innovative solutions
           </p>
         </div>
+
         {/* First Row: Steps 1, 2, and 3 */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
           {services.slice(0, 3).map((service, index) => (
             <div
               key={service.id}
-              className="relative p-6 bg-white text-black border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow"
+              className="relative p-6 bg-[#202020] text-white border border-gray-700 rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105"
             >
-              <div className="text-[#112347] mb-4">{service.icon}</div>
-              <h3 className="text-lg font-semibold  ">{service.title}</h3>
-              <p className="text-sm   mt-2">{service.description}</p>
-              <div className="absolute top-4 right-4 text-5xl font-extrabold text-gray-300">
+              <div className="text-white mb-4">{service.icon}</div>
+              <h3 className="text-lg font-semibold">{service.title}</h3>
+              <p className="text-sm md:text-base mt-2 text-gray-300">{service.description}</p>
+              <div className="absolute top-4 right-4 text-4xl font-extrabold text-gray-600">
                 {`0${index + 1}`}
               </div>
             </div>
@@ -75,27 +75,23 @@ const Process = () => {
 
         {/* Second Row: Steps 4 and 5 (Centered with equal width) */}
         <div className="flex justify-center mt-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl w-full">
             {/* Step 4 */}
-            <div
-              className="relative p-6 bg-white text-black border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow"
-            >
-              <div className="text-[#112347] mb-4">{services[3].icon}</div>
-              <h3 className="text-lg font-semibold  ">{services[3].title}</h3>
-              <p className="text-sm   mt-2">{services[3].description}</p>
-              <div className="absolute top-4 right-4 text-5xl font-extrabold text-gray-300">
+            <div className="relative p-6 bg-[#202020] text-white border border-gray-700 rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
+              <div className="text-white mb-4">{services[3].icon}</div>
+              <h3 className="text-lg font-semibold">{services[3].title}</h3>
+              <p className="text-sm md:text-base mt-2 text-gray-300">{services[3].description}</p>
+              <div className="absolute top-4 right-4 text-4xl font-extrabold text-gray-600">
                 {`04`}
               </div>
             </div>
 
             {/* Step 5 */}
-            <div
-              className="relative p-6 bg-white text-black border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow"
-            >
-              <div className="text-[#112347] mb-4">{services[4].icon}</div>
-              <h3 className="text-lg font-semibold  ">{services[4].title}</h3>
-              <p className="text-sm   mt-2">{services[4].description}</p>
-              <div className="absolute top-4 right-4 text-5xl font-extrabold text-gray-300">
+            <div className="relative p-6 bg-[#202020] text-white border border-gray-700 rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
+              <div className="text-white mb-4">{services[4].icon}</div>
+              <h3 className="text-lg font-semibold">{services[4].title}</h3>
+              <p className="text-sm md:text-base mt-2 text-gray-300">{services[4].description}</p>
+              <div className="absolute top-4 right-4 text-4xl font-extrabold text-gray-600">
                 {`05`}
               </div>
             </div>
