@@ -28,10 +28,15 @@ export default function Navbar() {
     <nav className="shadow-lg fixed bg-[#121212] w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex justify-between h-16">
+          
+          {/* ✅ LOGO wrapped in Link to go to Home */}
           <div className="flex items-center">
-            <img src={LOGO} className="h-11" alt="Logo" />
+            <Link to="/" onClick={handleLinkClick}>
+              <img src={LOGO} className="h-11 cursor-pointer" alt="Logo" />
+            </Link>
           </div>
 
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-[#D0DFEA] hover:text-[#5794F9]">Home</Link>
             <Link to="/about" className="text-[#D0DFEA] hover:text-[#5794F9]">About</Link>
@@ -46,6 +51,7 @@ export default function Navbar() {
             </Link>
           </div>
 
+          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -54,6 +60,7 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden" ref={menuRef}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
