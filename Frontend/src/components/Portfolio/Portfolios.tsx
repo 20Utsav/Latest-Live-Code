@@ -25,7 +25,7 @@ const Portfolio = () => {
               className="group relative bg-gray-400 text-black rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="relative h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-center justify-center z-10">
+                <div className="absolute inset-0 bg-[#121212] bg-opacity-40 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-center justify-center z-10">
                   <div className="space-x-4">
                     <a
                       href={project.project.demoUrl}

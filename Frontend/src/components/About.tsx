@@ -41,7 +41,7 @@ function About() {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-[#121212] bg-opacity-50"></div>
 
         {/* Content */}
         <div className="relative z-10 text-white px-6 md:px-12">

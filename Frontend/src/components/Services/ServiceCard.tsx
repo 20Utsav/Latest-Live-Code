@@ -15,7 +15,8 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
   path,
 }) => {
   return (
-    <div className="group w-full flex flex-col p-8 rounded-2xl h-[450px] bg-white text-black shadow-md border transform transition-all duration-500 hover:border-transparent hover:bg-[#112347] hover:text-gray-400">
+    <div className="group w-full flex flex-col p-8 rounded-2xl h-[450px] bg-[#202020] text-[#FFFFFF] shadow-md border border-[#396cb3] transform transition-all duration-500 hover:border-transparent hover:bg-[#4A96FF] ">
+
       <div className="flex items-center justify-center mb-6">
         <img
           src={icon}

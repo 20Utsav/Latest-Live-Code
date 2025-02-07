@@ -11,8 +11,8 @@ const Services = () => {
       window.scrollTo(0, 0);
     }, []);
   return (
-    <div className='py-8'>
-      <section className="py-20 px-4 md:px-8 lg:px-16">
+    <div className='py-8 bg-[#121212]'>
+      <section className="py-20 px-4 md:px-8 lg:px-16 text-[#D0DFEA]">
         <h2 className="text-center text-4xl font-extrabold mb-6">
           Our Services
         </h2>
@@ -38,7 +38,7 @@ const Services = () => {
       slidesPerView: 2, // 2 cards on medium screens (>= 768px)
     },
     1024: {
-      slidesPerView: 3, // 3 cards on large screens (>= 1024px)
+      slidesPerView: 4, // 3 cards on large screens (>= 1024px)
     },
   }}
   className="w-full"

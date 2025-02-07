@@ -25,7 +25,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="shadow-lg fixed bg-black w-full z-50">
+    <nav className="shadow-lg fixed bg-[#121212] w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -33,14 +33,14 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-400 hover:text-[#112347]">Home</Link>
-            <Link to="/about" className="text-gray-400 hover:text-[#112347]">About</Link>
-            <Link to="/services" className="text-gray-400 hover:text-[#112347]">Services</Link>
-            <Link to="/portfolio" className="text-gray-400 hover:text-[#112347]">Portfolio</Link>
-            <Link to="/blog" className="text-gray-400 hover:text-[#112347]">Blog</Link>
+            <Link to="/" className="text-[#D0DFEA] hover:text-[#5794F9]">Home</Link>
+            <Link to="/about" className="text-[#D0DFEA] hover:text-[#5794F9]">About</Link>
+            <Link to="/services" className="text-[#D0DFEA] hover:text-[#5794F9]">Services</Link>
+            <Link to="/portfolio" className="text-[#D0DFEA] hover:text-[#5794F9]">Portfolio</Link>
+            <Link to="/blog" className="text-[#D0DFEA] hover:text-[#5794F9]">Blog</Link>
             <Link
               to="/contact"
-              className="bg-[#112347] text-white px-4 py-2 rounded-md hover:bg-indigo-700"
+              className="bg-[#D0DFEA] text-black px-4 py-2 rounded-md hover:bg-[#5794F9]"
             >
               Contact Us
             </Link>

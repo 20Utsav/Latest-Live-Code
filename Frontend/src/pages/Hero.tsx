@@ -76,7 +76,7 @@ const Hero = () => {
       <img src="" alt="" />
       {/* Background Gradient Animation */}
       <motion.div
-        className="absolute inset-0 bg-black"
+        className="absolute inset-0 bg-[#121212]"
         animate={{
           backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
         }}
@@ -161,8 +161,7 @@ const Hero = () => {
               className="mt-6   text-base sm:text-lg relative z-[1]"
               variants={itemVariants}
             >
-              Learn UI-UX Design skills with weekend UX. The latest online
-              learning system and material that help your knowledge grow.
+              At CodeXCrafter Solution, we fuse creativity with technology to transform ideas into powerful digital realities.
             </motion.p>
             <motion.div
               className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 relative z-[1]"
@@ -297,13 +296,13 @@ const Hero = () => {
               {/* Circular Borders Background */}
               <div className="absolute bottom-12 right-24">
                 {/* Outer Circle */}
-                <div className="rounded-full border-2 border-gray-600 w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] absolute"></div>
+                <div className="rounded-full border-2 border-[#D0DFEA] w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] absolute opacity-25"></div>
                 {/* Second Circle */}
-                <div className="rounded-full border-2 border-gray-400 w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] absolute top-[25px] left-[25px]"></div>
+                <div className="rounded-full border-2 border-[#D0DFEA] w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] absolute top-[25px] left-[25px]"></div>
                 {/* Third Circle */}
-                <div className="rounded-full border-2 border-gray-400 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] absolute top-[50px] left-[50px]"></div>
+                <div className="rounded-full border-2 border-[#D0DFEA] w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] absolute top-[50px] left-[50px]"></div>
                 {/* Fourth Circle */}
-                <div className="rounded-full border-2 border-gray-400 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] absolute top-[90px] left-[90px]"></div>
+                <div className="rounded-full border-2 border-[#D0DFEA] w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] absolute top-[90px] left-[90px]"></div>
               </div>
             </div>
           </motion.div>
@@ -321,7 +320,7 @@ const Hero = () => {
               key={index}
               src={image}
               alt={`Logo ${index + 1}`}
-              className="h-10 text-white object-contain"
+              className="h-10 text-[#D0DFEA] object-contain"
               whileHover={{ rotate: 10, scale: 1.1, filter: "drop-shadow(0 0 8px rgba(96, 165, 250, 0.8))" }}
               transition={{ type: "spring", stiffness: 300 }}
             />
