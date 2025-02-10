@@ -111,7 +111,7 @@ function About() {
         {/* Left Content Section */}
         <div className="w-full lg:w-1/2 lg:pr-8 text-center lg:text-left">
           <div className="mb-4">
-            <p className="text-orange-500 uppercase font-bold text-sm tracking-widest animate-fadeInUp">
+            <p className="text-[#4A96FF] uppercase font-bold text-sm tracking-widest animate-fadeInUp">
               Helping Businesses Grow Digitally
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold   mt-2 animate-fadeInUp delay-100">
@@ -146,7 +146,7 @@ function About() {
 
         <div className="w-full lg:w-1/2 lg:pl-8">
           <div className="mb-4">
-            <p className="text-orange-500 uppercase font-bold text-sm tracking-widest">
+            <p className="text-[#4A96FF] uppercase font-bold text-sm tracking-widest">
               Helping Businesses Grow Digitally
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold   mt-2">
@@ -162,7 +162,7 @@ function About() {
       {/*Team Member */}
       <section className="w-full py-20">
         <h2 className="text-4xl font-extrabold text-center   mb-12">
-          Meet Our <span className="text-orange-500">Team</span>
+          Meet Our <span className="text-[#4A96FF]">Team</span>
         </h2>
         <Swiper
           modules={[Autoplay]}

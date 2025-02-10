@@ -41,7 +41,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="px-4 sm:px-8 lg:px-16 py-16">
+      <div className="px-4 sm:px-8 lg:px-16 py-16 text-white">
         <h2 className="text-center text-3xl sm:text-4xl font-bold mb-4">
           Blog
         </h2>
@@ -78,7 +78,7 @@ const Card = () => {
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className="px-4 py-2 bg-[#4A96FF] text-white rounded-md disabled:opacity-50"
+            className="px-4 py-2 bg-[#d0dfea] text-black rounded-md disabled:opacity-50 hover:bg-[#4A96FF]"
           >
             Previous
           </button>
@@ -88,7 +88,7 @@ const Card = () => {
           <button
             onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 bg-[#4A96FF] text-white rounded-md disabled:opacity-50"
+            className="px-4 py-2 bg-[#d0dfea] text-black rounded-md disabled:opacity-50 hover:bg-[#4A96FF]"
           >
             Next
           </button>

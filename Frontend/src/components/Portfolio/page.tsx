@@ -62,7 +62,7 @@ export default function Portfolio() {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-lg text-white font-medium transition-colors ${selectedCategory === category ? 'bg-indigo-600' : 'bg-[#202020] hover:bg-indigo-600'}`}
+                className={`px-4 py-2 rounded-lg text-white font-medium transition-colors ${selectedCategory === category ? 'bg-[#4A96FF]' : 'bg-[#202020] hover:bg-[#4A96FF]'}`}
               >
                 {category === 'all' ? 'All' : category}
               </button>

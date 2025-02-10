@@ -61,7 +61,7 @@ function ITSolutionSection() {
 
         {/* Right Content Section */}
         <div>
-          <p className="text-red-500 text-sm uppercase tracking-wide mb-2">
+          <p className="text-[#4A96FF] text-sm uppercase tracking-wide mb-2">
             Welcome
           </p>
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
@@ -92,9 +92,9 @@ function ITSolutionSection() {
                   <span>{item.label}</span>
                   <span>{item.value}%</span>
                 </div>
-                <div className="w-full bg-gray-800 rounded-full h-2.5">
+                <div className="w-full rounded-full h-2.5">
                   <div
-                    className="bg-red-500 h-2.5 rounded-full transition-all"
+                    className="bg-[#4A96FF] h-2.5 rounded-full transition-all"
                     style={{ width: `${item.value}%` }} // Fixed syntax error
                   ></div>
                 </div>
@@ -102,7 +102,7 @@ function ITSolutionSection() {
             ))}
           </div>
 
-          <button className="mt-8 py-3 px-6 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 transition">
+          <button className="mt-8 py-3 px-6 bg-[#d0dfea] text-black font-semibold rounded-md hover:bg-[#4A96FF] transition">
             Know More
           </button>
         </div>
