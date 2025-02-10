@@ -38,7 +38,7 @@ const Portfolio = () => {
                       href={project.project.githubUrl}
                       className="inline-flex items-center px-4 py-2 bg-white rounded-lg hover:bg-gray-100 transition-colors"
                     >
-                      <Github className="h-5 w-5 mr-2" />
+                      <Globe className="h-5 w-5 mr-2" />
                       Code
                     </a>
                   </div>
@@ -48,13 +48,13 @@ const Portfolio = () => {
                   alt={project.altText}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 bg-[#112347] text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div className="absolute top-4 right-4 bg-[#4A96FF] text-white px-3 py-1 rounded-full text-sm font-medium">
                   {project.category}
                 </div>
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold group-hover:text-[#112347] transition-colors">
+                <h3 className="text-xl font-semibold group-hover:text-[#4A96FF] transition-colors">
                   {project.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed">
@@ -64,7 +64,7 @@ const Portfolio = () => {
                   {project.project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-indigo-50 text-[#112347] rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-white text-[#4A96FF] rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>
@@ -73,7 +73,7 @@ const Portfolio = () => {
                 <div className="mt-6 pt-4 border-t border-gray-100">
                   <Link
                     to={`/portfolio/${project.title.toLowerCase().replace(/ /g, '-')}`} // Pass project key as a route parameter
-                    className="inline-flex items-center text-white hover:text-[#112347] font-medium"
+                    className="inline-flex items-center text-white hover:text-[#4A96FF] font-medium"
                   >
                     View Details
                     <ExternalLink className="ml-2 h-4 w-4" />
@@ -86,7 +86,7 @@ const Portfolio = () => {
 
         {/* Show More Button */}
         <div className="text-center mt-10">
-  <Link to="/portfolio" className="inline-flex items-center px-6 py-3 bg-[#112347] text-white font-semibold rounded-lg hover:bg-[#0a1c29] transition-colors">
+  <Link to="/portfolio" className="inline-flex items-center px-6 py-3 bg-[#D0DFEA] text-black font-semibold rounded-lg hover:bg-[#4A96FF] transition-colors">
     Show More 
     <FaArrowRight className="ml-2 h-5 w-5" /> {/* You can adjust the size of the icon if necessary */}
   </Link>

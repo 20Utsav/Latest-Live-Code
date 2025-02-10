@@ -61,7 +61,7 @@ const Card = () => {
                   alt={article.altText}
                   className="w-full h-48 sm:h-56 md:h-64 object-cover"
                 />
-                <span className="absolute top-3 left-3 bg-orange-600 text-white text-xs sm:text-sm px-3 py-1 rounded-md">
+                <span className="absolute top-3 left-3 bg-[#4A96FF] text-white text-xs sm:text-sm px-3 py-1 rounded-md">
                   {article.category}
                 </span>
               </div>
@@ -77,17 +77,17 @@ const Card = () => {
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md disabled:opacity-50"
+            className="px-4 py-2 bg-[#4A96FF] text-white rounded-md disabled:opacity-50"
           >
             Previous
           </button>
-          <span className="text-gray-700 font-medium">
+          <span className="text-white font-medium">
             Page {currentPage} of {totalPages}
           </span>
           <button
             onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md disabled:opacity-50"
+            className="px-4 py-2 bg-[#4A96FF] text-white rounded-md disabled:opacity-50"
           >
             Next
           </button>

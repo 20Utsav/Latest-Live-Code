@@ -36,10 +36,10 @@ const EmailForm: React.FC = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 border rounded-md p-3 bg-[#5794f9] text-black placeholder:text-black"
+            className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 border rounded-md p-3 bg-[#D0DFEA] text-black placeholder:text-black"
             required
           />
-          <button type="submit" className="bg-[#5794f9] text-black font-bold py-3 px-6 rounded">
+          <button type="submit" className="bg-[#D0DFEA] text-black font-bold py-3 px-6 rounded">
             Submit
           </button>
         </form>

@@ -41,16 +41,15 @@ function About() {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-[#121212] bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-[#121212] bg-opacity-75"></div>
 
         {/* Content */}
-        <div className="relative z-10 text-white px-6 md:px-12">
-          <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
-            ConvergeSol Overview
+        <div className="relative z-10 mx-auto text-white px-6 md:px-12 text-center">
+          <h1 className="manish text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+            ABOUT US
           </h1>
           <p className="mt-2 text-xs sm:text-sm md:text-lg lg:text-xl">
-            <span className="font-medium">Home</span> / About
-          </p>
+            <span className="font-medium">Home</span> / About</p>
         </div>
       </div>
 
@@ -66,7 +65,7 @@ function About() {
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Left Text Section */}
             <div className=" ">
-              <h2 className="text-4xl font-bold   mb-4">About Us</h2>
+              <h2 className="text-4xl font-bold mb-4 text-[#4A96FF]">About Us</h2>
               <p className="text-2xl font-bold   mb-4">
                 Weekend UX is a UI/UX Design Academy.
               </p>
@@ -85,7 +84,7 @@ function About() {
                 strengthening your skills for your golden future.
               </p>
 
-              <button className="mt-6 bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-md text-lg">
+              <button className="mt-6 bg-[#D0DFEA] hover:bg-[#4A96FF] text-black py-2 px-6 rounded-md text-lg">
                 Join Us
               </button>
             </div>

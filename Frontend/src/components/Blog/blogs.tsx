@@ -6,8 +6,8 @@ const Card = () => {
 
   return (
     <div className="px-4 md:px-8 lg:px-16">
-      <h2 className="text-center text-3xl font-bold mb-4">Blog</h2>
-      <p className="text-center mb-8">Love From Our Client Around The World</p>
+      <h2 className="text-center text-3xl font-bold mb-4 text-white">Blog</h2>
+      <p className="text-center mb-8 text-white">Stay updated with our latest blogs on industry trends and digital solutions</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {blogsArray.map(([key, article]) => (
@@ -22,12 +22,12 @@ const Card = () => {
                 alt={article.altText}
                 className="w-full h-48 object-cover"
               />
-              <span className="absolute top-3 left-3 bg-[#112347] text-white text-sm px-3 py-1 rounded-md">
+              <span className="absolute top-3 left-3 bg-[#4A96FF] text-white text-sm px-3 py-1 rounded-md">
                 {article.category}
               </span>
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-900">{article.title}</h3>
+              <h3 className="text-lg font-semibold text-white">{article.title}</h3>
             </div>
           </Link>
         ))}

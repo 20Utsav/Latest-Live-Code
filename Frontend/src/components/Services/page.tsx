@@ -12,7 +12,7 @@ const Services = () => {
     }, []);
   return (
     <div className='py-8 bg-[#121212]'>
-      <section className="py-20 px-4 md:px-8 lg:px-16 text-[#D0DFEA]">
+      <section className="py-20 px-4 md:px-8 lg:px-16 text-white">
         <h2 className="text-center text-4xl font-extrabold mb-6">
           Our Services
         </h2>

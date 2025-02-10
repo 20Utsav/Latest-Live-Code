@@ -99,13 +99,13 @@ export default function Portfolio() {
                     alt={project.altText}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute top-4 right-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-4 right-4 bg-[#4A96FF] text-white px-3 py-1 rounded-full text-sm font-medium">
                     {project.category}
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-indigo-600 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-[#4A96FF] transition-colors">
                     {project.title}
                   </h3>
                   <p className="mt-3 text-sm sm:text-base leading-relaxed text-white">
@@ -115,7 +115,7 @@ export default function Portfolio() {
                     {project.project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium"
+                        className="px-3 py-1 bg-white text-[#4A96FF] rounded-full text-sm font-medium"
                       >
                         {tech}
                       </span>
@@ -124,13 +124,13 @@ export default function Portfolio() {
                   <div className="mt-6 pt-4 border-t border-gray-100">
                     <Link
                       to={`/portfolio/${project.title.toLowerCase().replace(/ /g, '-')}`} // Pass project key as a route parameter
-                      className="inline-flex items-center text-white hover:text-[#112347] font-medium"
+                      className="inline-flex items-center text-white hover:text-[#4A96FF] font-medium"
                     >
                       View Details
                       <ExternalLink className="ml-2 h-4 w-4" />
                     </Link>
                   </div>
-                </div>
+                </div>  
               </div>
             ))}
           </div>

@@ -5,7 +5,7 @@ const BlogPage = () => {
   const { blogId } = useParams<{ blogId: string }>(); // Ensure blogId is always a string
   const blog: BlogPost | undefined = blogId ? BlogData[blogId] : undefined; 
   if (!blog) {
-    return <div className="text-center text-red-500 text-xl">Blog not found!</div>;
+    return <div className="text-center text-white text-xl">Blog not found!</div>;
   }
 
   return (

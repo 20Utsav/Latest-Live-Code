@@ -132,14 +132,14 @@ const Hero = () => {
               <div className="rounded-full border-2 border-gray-700 w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] absolute top-[90px] left-[90px]"></div>
             </div>
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 leading-tight relative z-[1]"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight relative z-[1]"
               variants={itemVariants}
               animate="visible"
               initial="hidden"
             >
               Where Creativity Meets{" "}
               <motion.span
-                className="text-blue-500 relative z-[1]"
+                className="text-[#4A96FF] relative z-[1]"
                 variants={glowVariants}
                 animate="visible"
                 initial="hidden"
@@ -148,7 +148,7 @@ const Hero = () => {
               </motion.span>{" "}
               and {" "}
               <motion.span
-                className="text-purple-600 relative z-[1]"
+                className="text-[#4A96FF] relative z-[1]"
                 variants={glowVariants}
                 animate="visible"
                 initial="hidden"

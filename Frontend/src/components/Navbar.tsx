@@ -38,14 +38,14 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-[#D0DFEA] hover:text-[#5794F9]">Home</Link>
-            <Link to="/about" className="text-[#D0DFEA] hover:text-[#5794F9]">About</Link>
-            <Link to="/services" className="text-[#D0DFEA] hover:text-[#5794F9]">Services</Link>
-            <Link to="/portfolio" className="text-[#D0DFEA] hover:text-[#5794F9]">Portfolio</Link>
-            <Link to="/blog" className="text-[#D0DFEA] hover:text-[#5794F9]">Blog</Link>
+            <Link to="/" className="text-white hover:text-[#4A96FF]">Home</Link>
+            <Link to="/about" className="text-white hover:text-[#4A96FF]">About</Link>
+            <Link to="/services" className="text-white hover:text-[#4A96FF]">Services</Link>
+            <Link to="/portfolio" className="text-white hover:text-[#4A96FF]">Portfolio</Link>
+            <Link to="/blog" className="text-white hover:text-[#4A96FF]">Blog</Link>
             <Link
               to="/contact"
-              className="bg-[#D0DFEA] text-black px-4 py-2 rounded-md hover:bg-[#5794F9]"
+              className="bg-[#D0DFEA] text-black px-4 py-2 rounded-md hover:bg-[#4A96FF]"
             >
               Contact Us
             </Link>

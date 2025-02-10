@@ -127,7 +127,7 @@ const Testimonial: React.FC = () => {
           TESTIMONIALS
         </h2>
         <p className="text-center mb-8">
-          Love From Our Client Around The World
+        Real stories from our satisfied clients, showcasing the impact of our solutions on their success
         </p>
 
         {/* Slider for Testimonials */}
@@ -147,10 +147,7 @@ const Testimonial: React.FC = () => {
                   Valeria Miller
                 </h3>
                 <p className=" ">
-                  This is a great site for everything around the home, and it also
-                  has a useful beauty section. You can see the best products in
-                  each category, and they even have test results to back up the
-                  information they are giving you.
+                CodeXCrafter Solution exceeded our expectations! Their team delivered a sleek, high-performing website and boosted our online presence. Professional, responsive, and highly skilled—highly recommend!
                 </p>
               </div>
             </div>
@@ -169,10 +166,7 @@ const Testimonial: React.FC = () => {
                   John Doe
                 </h3>
                 <p className=" ">
-                  This is a great site for everything around the home, and it also
-                  has a useful beauty section. You can see the best products in
-                  each category, and they even have test results to back up the
-                  information they are giving you.
+                Working with CodeXCrafter Solution was a breeze! They took our ideas and turned them into a sleek, fast, and user-friendly website. The team was super responsive and made the whole process smooth. If you need a website that truly stands out, these are the people to call!
                 </p>
               </div>
             </div>
@@ -191,10 +185,7 @@ const Testimonial: React.FC = () => {
                   Jane Smith
                 </h3>
                 <p className=" ">
-                  This is a great site for everything around the home, and it also
-                  has a useful beauty section. You can see the best products in
-                  each category, and they even have test results to back up the
-                  information they are giving you.
+                Working with CodeXCrafter Solution felt like having a dedicated game development partner. They took our vision, added their magic, and built a game that’s both visually stunning and incredibly fun to play. The team was super communicative, creative, and genuinely passionate about bringing ideas to life. Can’t wait to work with them again!
                 </p>
               </div>
             </div>

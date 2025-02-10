@@ -13,35 +13,35 @@ const services = [
     icon: <FaRegClipboard size={30} />,
     title: "Progressive Roadmap",
     description:
-      "Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive roadmap tools like Jira, Trello, and GitHub to update the roadmap within minutes.",
+      "Our team of expert developers formulates a progressive roadmap that outlines clear objectives and the key steps to achieve them. By leveraging advanced tools like Jira, Trello, and GitHub, we ensure our roadmaps are updated in real-time, allowing for seamless progress tracking and easy adaptability to any changes along the way.",
   },
   {
     id: 2,
     icon: <FaProjectDiagram size={30} />,
     title: "Efficient Project Management",
     description:
-      "We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently to plan a project and deliver it on time.",
+      "We prioritize efficient project management to ensure smooth project execution and timely delivery. By using tools like Wrike and Zoho, our experienced developers carefully plan, organize, and manage every project phase, guaranteeing exceptional outcomes with minimal delays.",
   },
   {
     id: 3,
     icon: <FaHandshake size={30} />,
     title: "Flexible Engagement Model",
     description:
-      "We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.",
+      "Our flexible engagement models are tailored to meet the unique needs of each client. Whether you need developers for short-term or long-term projects, we provide adaptable solutions. If the initial model doesn’t align with your goals, transitioning to another option is both simple and seamless.",
   },
   {
     id: 4,
     icon: <FaMoneyBillWave size={30} />,
     title: "Cost-Effective",
     description:
-      "Our team of developers provides the best development services at affordable prices. We believe that high-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring models.",
+      "Delivering high-quality services at competitive prices is our primary focus. We ensure that businesses of all sizes can access top-tier solutions through cost-effective pricing and flexible hiring models, ensuring you get the best value for your investment.",
   },
   {
     id: 5,
     icon: <FaBox size={30} />,
     title: "Consistent Delivery",
     description:
-      "Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.",
+      "Consistency is at the heart of our process. By embracing an agile methodology, our developers ensure that projects are delivered on time, fully functional, and in line with client expectations. We take pride in our commitment to consistently delivering outstanding results.",
   },
 ];
 
@@ -66,7 +66,7 @@ const Process = () => {
               <div className="text-white mb-4">{service.icon}</div>
               <h3 className="text-lg font-semibold">{service.title}</h3>
               <p className="text-sm md:text-base mt-2 text-gray-300">{service.description}</p>
-              <div className="absolute top-4 right-4 text-4xl font-extrabold text-gray-600">
+              <div className="absolute top-4 right-4 text-4xl font-extrabold text-[#4A96FF]">
                 {`0${index + 1}`}
               </div>
             </div>
@@ -81,7 +81,7 @@ const Process = () => {
               <div className="text-white mb-4">{services[3].icon}</div>
               <h3 className="text-lg font-semibold">{services[3].title}</h3>
               <p className="text-sm md:text-base mt-2 text-gray-300">{services[3].description}</p>
-              <div className="absolute top-4 right-4 text-4xl font-extrabold text-gray-600">
+              <div className="absolute top-4 right-4 text-4xl font-extrabold text-[#4A96FF]">
                 {`04`}
               </div>
             </div>
@@ -91,7 +91,7 @@ const Process = () => {
               <div className="text-white mb-4">{services[4].icon}</div>
               <h3 className="text-lg font-semibold">{services[4].title}</h3>
               <p className="text-sm md:text-base mt-2 text-gray-300">{services[4].description}</p>
-              <div className="absolute top-4 right-4 text-4xl font-extrabold text-gray-600">
+              <div className="absolute top-4 right-4 text-4xl font-extrabold text-[#4A96FF]">
                 {`05`}
               </div>
             </div>
