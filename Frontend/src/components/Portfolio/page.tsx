@@ -77,24 +77,6 @@ export default function Portfolio() {
                 className="group relative bg-[#202020] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <div className="absolute inset-0 bg-[#121212] bg-opacity-40 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-center justify-center z-10">
-                    <div className="space-x-4">
-                      <a
-                        href={project.project.demoUrl}
-                        className="inline-flex items-center px-4 py-2 bg-white rounded-lg hover:bg-gray-100 transition-colors"
-                      >
-                        <Globe className="h-5 w-5 mr-2" />
-                        Live Demo
-                      </a>
-                      <a
-                        href={project.project.githubUrl}
-                        className="inline-flex items-center px-4 py-2 bg-white rounded-lg hover:bg-gray-100 transition-colors"
-                      >
-                        <Github className="h-5 w-5 mr-2" />
-                        Code
-                      </a>
-                    </div>
-                  </div>
                   <img
                     src={project.imageSrc}
                     alt={project.altText}
@@ -109,12 +91,9 @@ export default function Portfolio() {
                   <h3 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-[#4A96FF] transition-colors">
                     {project.title}
                   </h3>
-                  {/* <p className="mt-3 text-sm sm:text-base leading-relaxed text-white">
-                    {project.project.description}
-                  </p> */}
                   <p className="mt-3 text-sm sm:text-base leading-relaxed text-white">
-                    {project.project.description.split(" ").slice(0, 20).join(" ")}{ // Show only first 20 words
-                      project.project.description.split(" ").length > 20 ? "..." : "" // Add "..." if text is long
+                    {project.project.description.split(" ").slice(0, 15).join(" ")}{
+                      project.project.description.split(" ").length > 15 ? "..." : "" 
                     }
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -129,7 +108,7 @@ export default function Portfolio() {
                   </div>
                   <div className="mt-6 pt-4 border-t border-gray-100">
                     <Link
-                      to={`/portfolio/${project.title.toLowerCase().replace(/ /g, '-')}`} // Pass project key as a route parameter
+                      to={`/portfolio/${project.title.toLowerCase().replace(/ /g, '-')}`} 
                       className="inline-flex items-center text-white hover:text-[#4A96FF] font-medium"
                     >
                       View Details

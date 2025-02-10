@@ -35,15 +35,15 @@ const ProjectDetail = () => {
 
         {/* Three Images in One Row */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-  {project.additionalImages.map((img, index) => (
-    <img
-      key={index}
-      src={img}
-      alt={`Project Image ${index + 1}`}
-      className="w-full h-40 object-cover rounded-lg shadow-md transition-transform duration-300 transform hover:scale-110"
-    />
-  ))}
-</div>
+          {project.additionalImages.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              alt={`Project Image ${index + 1}`}
+              className="w-full h-40 object-cover rounded-lg shadow-md transition-transform duration-300 transform hover:scale-110"
+            />
+          ))}
+        </div>
 
 
         {/* Back to Portfolio Button */}
