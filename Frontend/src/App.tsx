@@ -7,7 +7,7 @@ import Blog from "./components/Blog/page";
 import Blogcards from "../src/pages/Blogcards";
 import Services from "./components/Services/Services.tsx";
 import ServiceDetail from "./components/ServiceDetail/ServiceDetail.tsx";
-import ContactGetData from "./pages/ContactGetData";
+import ContactGetData from "./admin/ContactGetData.tsx";
 import Portfolio from "./components/Portfolio/page.tsx";
 import ProjectDetail from "./components/Portfolio/ProjectDetail.tsx";
 import Process from "./pages/Process";

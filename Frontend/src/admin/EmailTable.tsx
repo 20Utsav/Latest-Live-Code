@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../config";
 
 interface Email {
   _id: string;
@@ -14,7 +15,7 @@ const EmailTable: React.FC = () => {
   useEffect(() => {
     const fetchEmails = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/email/get-emails");
+        const response = await axios.get(`${BASE_URL}/email/get-emails`);
         setEmails(response.data);
       } catch (error) {
         console.error("Error fetching emails:", error);

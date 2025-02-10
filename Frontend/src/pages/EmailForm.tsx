@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../config";
 
 const EmailForm: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ const EmailForm: React.FC = () => {
     setMessage("");
 
     try {
-      const response = await axios.post("http://localhost:5000/api/email/store-email", { email });
+      const response = await axios.post(`${BASE_URL}/email/store-email`, { email });
       setMessage(response.data.message); // Show success message
       setEmail(""); // Clear input after submission
     } catch (error) {

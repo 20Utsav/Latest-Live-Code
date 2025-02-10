@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { BASE_URL } from "../config";
 interface Contact {
   _id: string;
   firstName: string;
@@ -13,7 +13,7 @@ const ContactGetData: React.FC = () => {
   const [contacts, setContacts] = useState<Contact[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/contact")
+    fetch(`${BASE_URL}/contact`)
       .then((response) => response.json())
       .then((data) => {
         // Remove duplicates by email (only keep the first occurrence)

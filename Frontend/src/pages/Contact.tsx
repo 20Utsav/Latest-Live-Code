@@ -4,6 +4,7 @@ import { FaEnvelope, FaPhoneAlt, FaRegClock, FaMapMarkerAlt } from "react-icons/
 import EmailForm from '../pages/EmailForm';
 import aboutBg from "../../img/about_bg.jpg";
 import { Link } from "react-router-dom";
+import { BASE_URL } from "../config";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -70,7 +71,7 @@ const Contact: React.FC = () => {
     if (!validateForm()) return;
 
     try {
-      const response = await axios.post("http://localhost:5000/api/contact", formData);
+      const response = await axios.post(`${BASE_URL}/contact`, formData);
       setMessage(response.data.message);
       setFormData({
         firstName: "",
