@@ -116,7 +116,7 @@ const ServiceDetail = () => {
                 ref={videoRef}
                 src={service.videoSrc}
                 autoPlay
-                loop
+                // loop
                 muted
                 className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-blue-500/50"
                 controls={false}

@@ -10,6 +10,7 @@ export interface Project {
         demoUrl: string;
         githubUrl: string;
     };
+    additionalImages: string[];
 }
 
 export const projects: Record<string, Project> = {
@@ -25,6 +26,11 @@ export const projects: Record<string, Project> = {
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80"
+        ],
     },
     "social-media-dashboard": {
         id: 2,
@@ -33,11 +39,16 @@ export const projects: Record<string, Project> = {
         altText: "Social Media Dashboard",
         title: "Social Media Dashboard",
         project: {
-            description: "Analytics dashboard for social media management with content scheduling, engagement metrics, and AI-powered insights.",
+            description: "Analytics dashboard for social media management with content scheduling, engagement metrics,An e-learning platform with video streaming, quizzes, and progress tracking for studentsAn e-learning platform with video streaming, quizzes, and progress tracking for studentsAn e-learning platform with video streaming, quizzes, and progress tracking for studentsAn e-learning platform with video streaming, quizzes, and progress tracking for students and AI-powered insights.",
             tech: ["React", "Node.js", "MongoDB", "Socket.io"],
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+        ],
     },
     "healthcare-portal": {
         id: 3,
@@ -51,6 +62,11 @@ export const projects: Record<string, Project> = {
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+        ],
     },
     "learning-management-system": {
         id: 4,
@@ -64,6 +80,11 @@ export const projects: Record<string, Project> = {
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80"
+        ],
     },
     "personal-finance-app": {
         id: 5,
@@ -77,6 +98,11 @@ export const projects: Record<string, Project> = {
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1563013544-fc4a22895cf4?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1563013544-fc4a22895cf4?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1563013544-fc4a22895cf4?auto=format&fit=crop&w=800&q=80"
+        ],
     },
     "weather-forecast-app": {
         id: 6,
@@ -90,6 +116,11 @@ export const projects: Record<string, Project> = {
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1551516594-cc56ec006b19?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1551516594-cc56ec006b19?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1551516594-cc56ec006b19?auto=format&fit=crop&w=800&q=80"
+        ],
     },
     "inventory-management-system": {
         id: 7,
@@ -103,6 +134,11 @@ export const projects: Record<string, Project> = {
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1581091012184-e27b9d327fc1?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1581091012184-e27b9d327fc1?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1581091012184-e27b9d327fc1?auto=format&fit=crop&w=800&q=80"
+        ],
     },
     "fitness-tracker-app": {
         id: 8,
@@ -116,6 +152,11 @@ export const projects: Record<string, Project> = {
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
+        ],
     },
     "project-management-tool": {
         id: 9,
@@ -129,5 +170,10 @@ export const projects: Record<string, Project> = {
             demoUrl: "#",
             githubUrl: "#",
         },
+        additionalImages: [
+            "https://images.unsplash.com/photo-1500336624523-d727130c3328?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1500336624523-d727130c3328?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1500336624523-d727130c3328?auto=format&fit=crop&w=800&q=80"
+        ],
     },
 };

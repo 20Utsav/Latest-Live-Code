@@ -15,13 +15,13 @@ export default function Portfolio() {
   ];
 
   // Filter projects based on selected category
-  const filteredProjects = selectedCategory === 'all' 
-    ? Object.values(projects) 
+  const filteredProjects = selectedCategory === 'all'
+    ? Object.values(projects)
     : Object.values(projects).filter((project) => project.category === selectedCategory);
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="py-8 bg-[#121212]">
@@ -41,9 +41,9 @@ export default function Portfolio() {
             ConvergeSol Overview
           </h1>
           <p className="mt-2 text-xs sm:text-sm md:text-lg lg:text-xl">
-                      <Link to="/" className="font-medium">Home</Link> /
-                      <Link to="/portfolio"> Protfolio</Link>
-                    </p>
+            <Link to="/" className="font-medium">Home</Link> /
+            <Link to="/portfolio"> Protfolio</Link>
+          </p>
         </div>
       </div>
 
@@ -109,8 +109,13 @@ export default function Portfolio() {
                   <h3 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-[#4A96FF] transition-colors">
                     {project.title}
                   </h3>
-                  <p className="mt-3 text-sm sm:text-base leading-relaxed text-white">
+                  {/* <p className="mt-3 text-sm sm:text-base leading-relaxed text-white">
                     {project.project.description}
+                  </p> */}
+                  <p className="mt-3 text-sm sm:text-base leading-relaxed text-white">
+                    {project.project.description.split(" ").slice(0, 20).join(" ")}{ // Show only first 20 words
+                      project.project.description.split(" ").length > 20 ? "..." : "" // Add "..." if text is long
+                    }
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.project.tech.map((tech, techIndex) => (
@@ -131,7 +136,7 @@ export default function Portfolio() {
                       <ExternalLink className="ml-2 h-4 w-4" />
                     </Link>
                   </div>
-                </div>  
+                </div>
               </div>
             ))}
           </div>

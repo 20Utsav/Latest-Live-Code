@@ -19,7 +19,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
     shadow-md transition-all duration-500 hover:shadow-2xl hover:shadow-[#4A96FF]">
 
       <div className="card-content group w-full flex flex-col items-center justify-center text-center bg-slate-200 h-full py-14 rounded-2xl transition-all duration-500">
-            
+
         {/* Image */}
         <div className="kanti flex items-center justify-center mb-4">
           <img
@@ -38,11 +38,6 @@ const ServicesCard: React.FC<ServicesCardProps> = ({
             <li key={index} className="mb-2">{detail}</li>
           ))}
         </ul>
-
-
-
-
-
 
         {/* Learn More Button */}
         <Link to={`/services/${path}`} className="font-medium flex items-center justify-center space-x-2 mt-4">
