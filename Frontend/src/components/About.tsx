@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FaCode, FaMobileAlt, FaCubes, FaPaintBrush } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -49,7 +50,9 @@ function About() {
             ABOUT US
           </h1>
           <p className="mt-2 text-xs sm:text-sm md:text-lg lg:text-xl">
-            <span className="font-medium">Home</span> / About</p>
+            <Link to="/" className="font-medium">Home</Link> /
+            <Link to="/about"> About</Link>
+          </p>
         </div>
       </div>
 

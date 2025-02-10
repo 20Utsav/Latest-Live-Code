@@ -27,15 +27,16 @@ const Card = () => {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-[#121212] bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-[#121212] bg-opacity-75"></div>
 
         {/* Content */}
-        <div className="relative z-10 text-white px-6 md:px-12">
+        <div className="relative z-10 text-white px-6 md:px-12 mx-auto text-center">
           <h1 className="text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
             ConvergeSol Overview
           </h1>
           <p className="mt-2 text-xs sm:text-sm md:text-lg lg:text-xl">
-            <span className="font-medium">Home</span> / Blog
+            <Link to="/" className="font-medium">Home</Link> /
+            <Link to="/blog"> Blog</Link>
           </p>
         </div>
       </div>
